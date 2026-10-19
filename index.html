@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="0;url=https://sailing-expected-junction-wheels.trycloudflare.com/">
-<title>SONIWIYU LumFile</title>
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SONIWIYU LumFile</title></head>
+<body><p>Menghubungkan ke LumFile...</p>
 <script>
-window.location.replace("https://sailing-expected-junction-wheels.trycloudflare.com/");
-</script>
-</head>
-<body>
-<p>Menghubungkan ke SONIWIYU LumFile...</p>
-<a href="https://sailing-expected-junction-wheels.trycloudflare.com/">Buka LumFile</a>
-</body>
-</html>
+(async()=>{
+ try {
+  const r=await fetch("https://raw.githubusercontent.com/soniserver/soniserver.github.io/main/current.txt?t="+Date.now(),{cache:"no-store"});
+  const u=(await r.text()).trim();
+  if(/^https:\/\/[a-z0-9-]+\.trycloudflare\.com\/?$/i.test(u)) location.replace(u);
+  else document.body.innerHTML="URL LumFile belum tersedia. Coba lagi sebentar.";
+ } catch(e) { document.body.innerHTML="Belum bisa mengambil URL LumFile. Muat ulang halaman."; }
+})();
+</script></body></html>
